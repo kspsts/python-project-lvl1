@@ -4,7 +4,7 @@ install: # Установка пакета poetry Install (poetry создаст
 brain-games: # Запуск скрипта poetry run brain-games
 	poetry run brain-games
 
-build: # Команда buildсоздает архивы исходников и колес
+build: # Команда build создает архивы исходников и колес
 	poetry build
 
 publish: # Для отладки публикации мы будем использовать аргумент --dry-run, чтобы не добавлять пакет в каталог PyPI
@@ -12,3 +12,6 @@ publish: # Для отладки публикации мы будем испол
 
 package-install: # Установка проекта из директории 
 	python3 -m pip install --user dist/*.whl
+
+make lint: # Проверка кода проекта Flake8
+	poetry run flake8 brain_games
