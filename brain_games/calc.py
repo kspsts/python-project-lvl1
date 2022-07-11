@@ -14,7 +14,7 @@ def game_logic():
       a = randint(20, 40)
       b = choice('+-*')
       c = randint(1, 20)
-      print(f'Question:  {a} {b} {c}')
+      print(f'Question: {a} {b} {c}')
       answer = prompt.string('Your answer: ')
       correct_answer = ' '
       if b == '+' and answer != str(a + c):
