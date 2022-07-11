@@ -1,5 +1,6 @@
 from brain_games.gcd import game_logic
 
+
 def main():
     game_logic()
 
