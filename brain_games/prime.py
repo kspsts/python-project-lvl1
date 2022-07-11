@@ -27,4 +27,4 @@ def game_logic():
         print('Correct!')
         i += 1
       if i > 2:
-        print(f'Congratulation, {name}!')
+        print(f'Congratulations, {name}!')
