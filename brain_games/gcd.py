@@ -13,7 +13,7 @@ def game_logic():
     while i <= 2:
       a = randint(1, 100)
       b = randint(1, 100)
-      print(f'Quastion: {a} {b}')
+      print(f'Question: {a} {b}')
       answer = prompt.string('Your answer: ')
       correct_answer = ''
       while a != 0 and b != 0:
@@ -29,4 +29,4 @@ def game_logic():
         break
       i += 1
       if i > 2:
-        print(f'Congratulation! {name}')
+        print(f'Congratulations, {name}!')
