@@ -12,7 +12,7 @@ def game_logic():
 
     while i <= 2:
         prime_numbers = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41]
-        random_numbers = randint(1, 55)
+        random_numbers = randint(1, 41)
         print(f'Question: {random_numbers}')
         answer = prompt.string('Your answer: ')
 
