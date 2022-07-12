@@ -20,12 +20,12 @@ def game_logic():
             q = question[:random_n] + ['..'] + question[random_n + 1:10]
 
         print(f"Question: {' '.join(map(str, q))}")
-        correct_answer = question[random_n]
+        tru = question[random_n]
         answer = prompt.string('Your answer: ')
-        if str(correct_answer) == answer:
+        if str(tru) == answer:
             print('Correct!')
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
+            print(f"'{answer}' is wrong answer ;(. Correct answer was '{tru}'.")
             print(f"Let's try again, {name}!")
             break
         i += 1

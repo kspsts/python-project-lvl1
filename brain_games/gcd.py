@@ -15,17 +15,18 @@ def game_logic():
         b = randint(1, 100)
         print(f'Question: {a} {b}')
         answer = prompt.string('Your answer: ')
-        correct_answer = ''
+        tru = ''
         while a != 0 and b != 0:
             if a > b:
                 a = a % b
             else:
                 b = b % a
-        correct_answer += str(a + b)
-        if answer == correct_answer:
+        tru += str(a + b)
+        if answer == tru:
             print('Correct!')
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.\nLet's try again, {name}!")
+            print(f"'{answer}' is wrong answer ;(. Correct answer was '{tru}'.")
+            print(f"Let's try again, {name}!")
             break
         i += 1
         if i > 2:

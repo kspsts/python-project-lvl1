@@ -17,18 +17,21 @@ def game_logic():
         c = randint(1, 20)
         print(f'Question: {a} {b} {c}')
         answer = prompt.string('Your answer: ')
-        correct_answer = ' '
+        tru = ' '
         if b == '+' and answer != str(a + c):
-            correct_answer = str(a + c)
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'. \nLet's try again, {name}!")
+            tru = str(a + c)
+            print(f"'{answer}' is wrong answer ;(. Correct answer was '{tru}'.")
+            print(f"Let's try again, {name}!")
             break
         elif b == '-' and answer != str(a - c):
-            correct_answer = str(a - c)
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'. \nLet's try again, {name}!")
+            tru = str(a - c)
+            print(f"'{answer}' is wrong answer ;(. Correct answer was '{tru}'.")
+            print(f"Let's try again, {name}!")
             break
         elif b == '*' and answer != str(a * c):
-            correct_answer = str(a * c)
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'. \nLet's try again, {name}!")
+            tru = str(a * c)
+            print(f"'{answer}' is wrong answer ;(. Correct answer was '{tru}'.")
+            print(f"Let's try again, {name}!")
             break
         else:
             print('Correct!')
